@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Text;
 using NUnit.Framework;
 
 namespace ProjectEuler.Tests
@@ -34,6 +35,22 @@ namespace ProjectEuler.Tests
 
             Trace.WriteLine(string.Format("{0} - {1} - {2}", n, f, s));
             
+        }
+
+        [Test]
+        public void Problem0003Test()
+        {
+
+            var factors = Problem0003.Solution(600851475143);
+            var res = new StringBuilder(factors[0].ToString());
+
+            if (factors.Length > 1)
+                for (int i = 1; i < factors.Length; i++)
+                {
+                    res.AppendFormat(", {0}", factors[i]);
+                }
+
+            Trace.WriteLine(res);
         }
     }
 }
