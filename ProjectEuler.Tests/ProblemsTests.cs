@@ -52,5 +52,29 @@ namespace ProjectEuler.Tests
 
             Trace.WriteLine(res);
         }
+
+        [Test]
+        [TestCase(112, false)]
+        [TestCase(11211, true)]
+        [TestCase(2222, true)]
+        public void Problem0004IsPalindromeTest(int num, bool result)
+        {
+            Assert.That(Problem0004.IsPalindrome(num), Is.EqualTo(result));
+        }
+
+        [Test]
+        public void Problem0004Test()
+        {
+            int i,j;
+            var result = Problem0004.Solution(out i, out j);
+            Trace.WriteLine(string.Format("{0} = {1}*{2} ", result, i, j));
+        }
+
+        [Test]
+        public void Problem0005Test()
+        {
+            var result = Problem0005.Solution(20);
+            Trace.WriteLine(result);
+        }
     }
 }
