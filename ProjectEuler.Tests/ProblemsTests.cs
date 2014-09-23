@@ -76,5 +76,22 @@ namespace ProjectEuler.Tests
             var result = Problem0005.Solution(20);
             Trace.WriteLine(result);
         }
+
+        [Test]
+        public void Problem0006Test()
+        {
+            var result = Problem0006.Solution();
+            Trace.WriteLine(result);
+
+            result = Problem0006.Solution2();
+            Trace.WriteLine(result);
+        }
+
+        [Test]
+        public void Problem0007Test()
+        {
+            var result = Problem0007.Solution(10001);
+            Trace.WriteLine(result);
+        }
     }
 }
