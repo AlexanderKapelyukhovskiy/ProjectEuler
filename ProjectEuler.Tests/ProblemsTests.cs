@@ -93,5 +93,14 @@ namespace ProjectEuler.Tests
             var result = Problem0007.Solution(10001);
             Trace.WriteLine(result);
         }
+
+        [Test]
+        public void Problem0008Test()
+        {
+            //var r = Problem0008.Multiply("12345");
+            //Trace.WriteLine(r);
+            var result = Problem0008.Solution();
+            Trace.WriteLine(result);
+        }
     }
 }
