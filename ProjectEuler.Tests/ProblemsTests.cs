@@ -123,5 +123,12 @@ namespace ProjectEuler.Tests
             var result = Problem0011.Solution();
             Trace.WriteLine(result);
         }
+
+        [Test]
+        public void Problem0012Test()
+        {
+            var result = Problem0012.Solution(500);
+            Trace.WriteLine(result);
+        }
     }
 }
